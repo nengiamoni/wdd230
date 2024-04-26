@@ -13,6 +13,16 @@
         background-color: #e6f2ff;
     }
 
+    header {
+        background-color: black;
+        /* Set the background color to black */
+        color: white;
+        /* Set the text color to white */
+        padding: 20px;
+        /* Add some padding for spacing */
+    }
+
+
     main {
         display: grid;
         grid-template-columns: 1fr 1fr;
