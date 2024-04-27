@@ -1,0 +1,41 @@
+@media (min-width: 768px) {
+
+    body {
+        font-size: 18px;
+    }
+
+    .container {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+}
+
+header {
+    background: rgb(31, 48, 74);
+    text-align: center;
+    color: white;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    background: rgb(28, 28, 53);
+    font-size: larger;
+}
+
+nav a {
+    text-decoration: none;
+    padding: 25px;
+    text-align: center;
+    color: white;
+
+}
+
+nav a:hover {
+    color: burlywood
+}
+
+.line {
+    border-bottom: 1px solid black;
+}

@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Sansita", sans-serif;
+}
+
+/* mobile **************************/
+header {
+    background-color: #bbb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+header,
+main {
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+nav {
+    background-color: #36454f;
+
+
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav a {
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: overline;
+}
+
+.active {
+    color: burlywood;
+}
+
+.home-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    column-gap: 10px;
+    margin-top: 10px;
+}
+
+.home-grid section {
+    border: 1px solid;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: white
+}
+
+.home-grid span {
+    background-color: rgb(37, 58, 85);
+    color: white;
+    display: block;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.home-grid p {
+    padding: 10px;
+
+}
+
+.line {
+    margin-top: 20px;
+
+}
+
+footer {
+    background-color: rgb(41, 69, 92);
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+    padding: 20px;
+
+}
+
+
+
+
+
+
+
+
+
+
+/* Larger Views ******************************/
+@media (min-width: 640px) {
+    nav ul {
+        display: flex;
+    }
+
+    nav ul li {
+        flex: 1 1 100%;
+    }
+}
