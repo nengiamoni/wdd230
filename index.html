@@ -32,14 +32,19 @@
 
 <body>
     <header>
-        <a id="logo_link" href="index.html"></a>
-        <img src="images/nengi ceo.jpg" alt="my image" width="200" height="150">
-        <span>Favour Amoni</span>
+        <picture>
+            <img src="images/nengi ceo.jpg" alt="nengi Image">
+        </picture>
+        <span class="name">Favour T Amoni</span>
+        <div id="mode">🕶️</div>
     </header>
+
+    <button id="hamburger-menu" class="open"></button>
+
     <nav>
         <ul id="menu">
             <li><a href="index.html" class="active">Home</a></li>
-            <li><a href="Services.html">Chamber</a></li>
+            <li><a href="./chamber/index.html">Chamber</a></li>
             <li><a href="./week01/chamber-site-plan.html">Site Plan</a></li>
             <li><a href="Form.html">Form</a></li>
         </ul>
@@ -47,7 +52,7 @@
     <main>
         <h1>WDD 230: Web Frontend Development</h1>
         <div class="card-container">
-            <section class="card">
+            <section class="card card1">
                 <h2>Learning Activities</h2>
                 <ul id="learning-activities">
                     <li>week 01: <a href="week01/holygrail.html">Holgrail</a> | <a href="week01/media-query.html"> Media
@@ -63,24 +68,19 @@
                     <li>week 06: <a href="/"></a></li>
                 </ul>
             </section>
-
-            <section class="card">
+            <section class="card card2">
                 <h2>Information</h2>
-                <!-- Placeholder information -->
-                <p>Weather: port-harcourt</p>
-                <p>🌞76ºF - sunshine</p>
-                <p>page visits: 15</p>
-                <!-- Add more information as needed -->
+                <p>Rivers state, Nigeria</p>
+                <p>Weather: 91 F</p>
+                <p>Number of visits: 195</p>
             </section>
-
-
+        </div>
     </main>
     <footer>
-        <p id="copyright">&copy; <span id="year"></span> 🌷Favour Amoni,🌺 Nigeria⛳</p>
-        <p id="lastModified">Page last modified: 01/01/1970 12:00:00<span id="lastModifiedTimestamp"></span></p>
+        <p>&#169; <span id="year"></span> 😊FAVOUR TAMMONENGIYE OFORI AMONI,🌷 Nigeria⛳</p>
+        <p id="lastModified"></p>
     </footer>
     <script src="scripts/getDates.js"></script>
-
 </body>
 
 </html>
