@@ -1,0 +1,352 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100dvh;
+    width: 100dvw;
+    background-color: #e9e9e9;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+header {
+    background-color: white;
+    display: flex;
+    position: relative;
+    height: 7vh;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: 1rem;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo .name span {
+    display: block;
+    line-height: 20px;
+}
+
+.logo .name .ido {
+    font-size: 1.6rem;
+}
+
+span.chamber {
+    font-size: 1rem;
+    font-weight: 900;
+}
+
+.logo img {
+    height: 2rem;
+    width: 2rem;
+    margin-right: 0.5rem;
+}
+
+nav {
+    display: none;
+    position: absolute;
+    width: 100%;
+    inset-inline: 0;
+    top: 7vh;
+    min-height: 25vh;
+    z-index: 10;
+    background-color: #e9e9e9;
+}
+
+nav.active {
+    display: flex;
+}
+
+nav ul {
+    display: flex;
+    column-gap: 3rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    gap: 0.5rem;
+}
+
+nav ul li {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    flex: 1;
+    background-color: white;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-weight: 900;
+    font-size: 1rem;
+    color: #232323;
+    padding-block: 1rem;
+}
+
+.menu-toggle {
+    color: #036e3c;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    display: none;
+}
+
+.menu-open-btn {
+    font-size: 1.6rem;
+}
+
+.menu-close-btn {
+    font-size: 1.4rem;
+}
+
+.menu-open-btn.active,
+.menu-close-btn.active {
+    display: block;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    row-gap: 1rem;
+}
+
+.hero {
+    position: relative;
+    height: 30vh;
+    width: 100%;
+    overflow: hidden;
+    background-color: black;
+}
+
+.bg-image {
+    object-fit: cover;
+    opacity: 0.4;
+}
+
+.cta {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 1rem 2rem;
+    font-weight: 900;
+    font-size: 1rem;
+    cursor: pointer;
+    color: aqua;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.events-weather {
+    display: grid;
+    grid-template-columns: 1fr;
+    height: 40vh;
+    width: 100%;
+    gap: 0.5rem;
+}
+
+.events-weather .events,
+.events-weather .weather {
+    position: relative;
+    padding: 2rem 1rem;
+    min-height: 30vh;
+    background-color: white;
+}
+
+.events {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    overflow-y: auto;
+}
+
+.weather-p,
+.events-p {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0.2rem 0.4rem;
+    background-color: rgba(0, 0, 0, 0.8);
+    font-size: smaller;
+}
+
+.events h3 {
+    margin-bottom: 0.5rem;
+    font-weight: 900;
+    color: #232323;
+}
+
+.events span {
+    color: #111010;
+}
+
+.events h3 span {
+    font-size: 1rem;
+}
+
+/* remove this ID from HTML and css */
+.weather-sign p,
+.weather-info p,
+.humidity p,
+.wind-chill p {
+    color: #232323;
+}
+
+#weather {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.weather-sign,
+.humidity,
+.wind-chill {
+    display: flex;
+    height: 4rem;
+    width: 100%;
+    gap: 1rem;
+
+}
+
+.sign,
+.weather-info,
+.humidity p,
+.wind-chill p {
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+
+.humidity p:first-child,
+.wind-chill p:first-child {
+    align-items: center;
+    justify-content: end;
+}
+
+.humidity p:nth-child(2),
+.wind-chill p:nth-child(2) {
+    align-items: center;
+}
+
+.weather-sign .sign {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.weather-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.weather-info p:nth-child(2) {
+    font-weight: 900;
+    font-size: 1.2rem;
+}
+
+.sign {
+    font-size: 3.2rem;
+}
+
+.spotlight {
+    text-align: center;
+    color: white;
+    padding: 1rem 1rem;
+    margin-block: 2rem;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.member-spotlights {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+    gap: 0.5rem;
+}
+
+.member-spotlights .members {
+    height: 20vh;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    color: #232323;
+    background-color: white;
+}
+
+.members h3 {
+    font-weight: 900;
+}
+
+.members p {
+    font-size: 0.9rem;
+}
+
+.members p:nth-child(2) {
+    text-align: end;
+}
+
+footer {
+    min-height: 20vh;
+    width: 100%;
+    background-color: white;
+    padding: 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon {
+    margin-right: 0.5rem;
+}
+
+.icon img {
+    height: 6rem;
+}
+
+.address p,
+.contact p,
+.developer p {
+    font-size: smaller;
+    color: #111010;
+}
+
+.address h3 {
+    margin-bottom: 0.2rem;
+    color: #232323;
+}
+
+.contact,
+.developer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.developer {
+    margin-top: 1rem;
+}
+
+.lastModified {
+    font-size: 0.6rem;
+    color: #111010;
+    margin-block: 1rem;
+}
+
+main,
+footer {
+    color: aqua;
+}
