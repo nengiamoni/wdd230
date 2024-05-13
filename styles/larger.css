@@ -1,9 +1,4 @@
 @media screen and (min-width: 600px) {
-    body {
-        font-size: 16px;
-        text-align: justify;
-    }
-
     footer {
         font-size: 12px;
         color: white;
@@ -11,22 +6,16 @@
 
     header {
         font-size: 10px;
-        text-align: center;
-        position: relative;
-        justify-content: center;
     }
 
     header img {
-        display: block;
-        margin: 0 auto;
-        width: 200px;
-        margin-right: 2rem;
+        height: 7rem;
     }
 
-    .name {
+    header .name {
         display: block;
         margin-top: 10px;
-        font-size: 20px;
+        font-size: 1.6rem;
     }
 
     nav {

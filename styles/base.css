@@ -1,35 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100dw;
+    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Arial', sans-serif;
+    background-color: white;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+
 header {
-    background-color: rgb(85, 120, 197);
-    height: 100%;
-    padding: 2rem;
-    text-align: center;
+    background-image: linear-gradient(to bottom, #182a51, #4567a6);
+    position: relative;
+    padding: 1rem;
+    min-height: 20vh;
     font-size: 40px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color: black;
+    color: white;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 header .name {
-    font-size: 1.6rem;
+    font-size: 1.2rem;
 }
 
 header img {
     display: inline-block;
     vertical-align: middle;
-    margin-right: 1rem;
-    width: 200px;
+    margin-right: 2rem;
+    height: 5rem;
+    width: auto;
     border-radius: 1rem;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 
 }
 
-#mode {
+.mode-and-menu {
     position: absolute;
+    display: flex;
     top: 1rem;
     right: 1rem;
+    column-gap: 1rem;
+    align-items: center;
+    height: 2rem;
+    line-height: 1rem;
+}
+
+#mode {
     font-size: 3rem;
     cursor: pointer;
-    font-size: 2rem;
+    font-size: 1.4rem;
 }
 
 nav {
@@ -37,7 +64,6 @@ nav {
     justify-content: space-between;
     align-items: center;
     background-color: black;
-    padding: 1rem;
 }
 
 #menu {
@@ -52,21 +78,22 @@ nav {
 
 #hamburger-menu {
     display: block;
-    /* Show the button */
     border: none;
     font-size: 24px;
     cursor: pointer;
     width: 100%;
+    background: none;
+    padding-bottom: 0.2rem;
 }
 
 #hamburger-menu.open::before {
     content: "\2630";
-    /* Hamburger icon */
+    color: white;
 }
 
 #hamburger-menu.close::before {
     content: "\2716";
-    /* Close icon */
+    color: white;
 }
 
 #hamburger-menu.close {
@@ -81,17 +108,16 @@ nav {
 #menu li a {
     text-decoration: none;
     color: white;
-    padding: 1rem 2rem;
+    padding: 1rem;
     transition: background-color 0.3s;
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: black;
-    padding: 5px;
     top: 5%;
     left: 0;
     width: 100%;
-    z-index: 1000;
+    z-index: 10;
 }
 
 #menu li a:hover {
@@ -102,16 +128,47 @@ nav {
     background-color: brown;
 }
 
-body {
-    font-family: 'Arial', sans-serif;
-    background-color: white;
-    color: #333;
-    margin: 0;
-    padding: 0;
+picture {
+    position: relative;
+    height: 750px;
+    width: 100%;
+}
+
+.overlay {
+    position: absolute;
+    top: 0.5rem;
+    left: 0.5rem;
+    z-index: 10;
+}
+
+.overlay::before {
+    position: absolute;
+    content: "Aba Temple, Nigeria";
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 1.6rem 2.4rem;
+    width: max-content;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.hero {
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
 }
 
 main {
     margin: 0 auto;
+    background-color: #faebeb;
 }
 
 h1 {
@@ -124,7 +181,14 @@ h1 {
     flex-direction: column;
     gap: 20px;
     border-radius: 10px;
+    padding-bottom: 2rem;
 
+}
+
+#learning-activities li {
+    list-style: none;
+    margin-block: 0.2rem;
+    font-size: smaller;
 }
 
 .card {
@@ -133,7 +197,6 @@ h1 {
     padding: 20px;
     border-radius: 8px;
     list-style: none;
-
 }
 
 .card h2 {
@@ -141,7 +204,7 @@ h1 {
     background-color: #1091c3;
     margin-top: 0;
     padding: 10px 20px;
-
+    margin-bottom: 1rem;
 }
 
 
@@ -152,10 +215,20 @@ h1 {
     padding: 10px 20px;
 }
 
+.card2 p {
+    margin-block: 2rem;
+    text-align: center;
+}
+
+iframe {
+    width: 100%;
+}
+
 footer {
     bottom: 1rem;
     background-color: #032163;
     display: flex;
+    gap: 0.5rem;
     flex-direction: column;
     justify-content: center;
     align-items: center;

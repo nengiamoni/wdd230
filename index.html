@@ -27,61 +27,77 @@
         href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Big+Shoulders+Display:wght@300&family=Courgette&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Libre+Franklin:ital,wght@1,300&family=Mooli&family=Permanent+Marker&family=Playfair+Display&family=Quintessential&display=swap"
         rel="stylesheet">
 </head>
-<div id="mode">
-    🕶️
+<header>
+    <img src="images/nengiceo.jpg" alt="nengiceo Image">
+    <span class="name">Favour T Amoni</span>
+    <div class="mode-and-menu">
+        <div id="mode">☀</div>
+        <button id="hamburger-menu" class="open"></button>
+    </div>
+</header>
+
+<nav>
+    <ul id="menu">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="./chamber/index.html">Chamber</a></li>
+        <li><a href="./week01/chamber-site-plan.html">Site Plan</a></li>
+        <li><a href="Form.html">Form</a></li>
+    </ul>
+</nav>
+
+<div class="hero">
+    <div class="overlay"></div>
+    <picture>
+        <source srcset="./week03/images/hero-small.webp" media="(max-width: 400px)">
+        <source srcset="./week03/images/hero-medium.webp" media="(max-width: 960px)">
+        <img src="./week03/images/hero-large.webp" alt="Aba Temple" width="1500" height="750"">
+    </picture>
+  </div>
+
+  <h1>WDD 230: Web Frontend Development</h1>
+
+  <main>
+    <div class=" card-container">
+        <section class="card card1">
+            <h2>Learning Activities</h2>
+            <ul id="learning-activities">
+                <li>week 01: <a href="week01/holygrail.html">Holgrail</a> | <a href="week01/media-query.html"> Media
+                        query </a></li>
+                <li>week 02:
+                    <a target="_blank" href="week02/design.html">Design</a> |
+                    <a target="_blank" href="https://codepen.io/adefemiadelaja/pen/oNORPXd">Menu</a> |
+                    <a target="_blank" href="./week02/bom.html">BOM App</a>
+                </li>
+                <li>week 03:
+                    <a href="week03/images/landscape.webp">WebP</a> |
+                    <a href="week03/lazyload.html">L-Loading</a> |
+                    <a href="week03/responsive-images.html">R-Images</a> |
+                    <a href="week03/bom.html">L-Storage</a>
+                </li>
+                <li>week 04: <a href="/"></a></li>
+                <li>week 05: <a href="/"></a></li>
+                <li>week 06: <a href="/"></a></li>
+            </ul>
+        </section>
+        <section class="card card2">
+            <h2>Information</h2>
+            <p>Ibadan, Nigeria</p>
+            <p>Weather: 🌤️ 91&deg;F</p>
+            <p class="visits"></p>
+        </section>
 </div>
+</main>
 
-<body>
-    <header>
-        <picture>
-            <img src="images/nengiceo.jpg" alt="nengi Image">
-        </picture>
-        <span class="name">Favour T Amoni</span>
-        <div id="mode">🕶️</div>
-    </header>
+<iframe
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3973.7241223876435!2d7.353935875808189!3d5.148039094829254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x10429986acee733b%3A0xe939f64e8530fc7f!2sAba%20Nigeria%20Temple!5e0!3m2!1sen!2sng!4v1715277008217!5m2!1sen!2sng"
+    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade"></iframe>
 
-    <button id="hamburger-menu" class="open"></button>
-
-    <nav>
-        <ul id="menu">
-            <li><a href="index.html" class="active">Home</a></li>
-            <li><a href="./chamber/index.html">Chamber</a></li>
-            <li><a href="./week01/chamber-site-plan.html">Site Plan</a></li>
-            <li><a href="Form.html">Form</a></li>
-        </ul>
-    </nav>
-    <main>
-        <h1>WDD 230: Web Frontend Development</h1>
-        <div class="card-container">
-            <section class="card card1">
-                <h2>Learning Activities</h2>
-                <ul id="learning-activities">
-                    <li>week 01: <a href="week01/holygrail.html">Holgrail</a> | <a href="week01/media-query.html"> Media
-                            query </a></li>
-                    <li>week 02:
-                        <a target="_blank" href="week02/design.html">Design Principles</a> |
-                        <a target="_blank" href="https://codepen.io/adefemiadelaja/pen/oNORPXd">Week 02 - CodePen</a> |
-                        <a target="_blank" href="./week02/bom.html">Book of Mormon App</a>
-                    </li>
-                    <li>week 03: <a href="/"></a></li>
-                    <li>week 04: <a href="/"></a></li>
-                    <li>week 05: <a href="/"></a></li>
-                    <li>week 06: <a href="/"></a></li>
-                </ul>
-            </section>
-            <section class="card card2">
-                <h2>Information</h2>
-                <p>Rivers state, Nigeria</p>
-                <p>Weather: 91 F</p>
-                <p>Number of visits: 195</p>
-            </section>
-        </div>
-    </main>
-    <footer>
-        <p>&#169; <span id="year"></span> 😊FAVOUR TAMMONENGIYE OFORI AMONI,🌷 Nigeria⛳</p>
-        <p id="lastModified"></p>
-    </footer>
-    <script src="scripts/getDates.js"></script>
+<footer>
+    <p>&#169; <span id="year"></span> 😊FAVOUR TAMMONENGIYE OFORI AMONI,🌷 Nigeria⛳</p>
+    <p id="lastModified"></p>
+</footer>
+<script src="scripts/getDates.js"></script>
 </body>
 
 </html>
