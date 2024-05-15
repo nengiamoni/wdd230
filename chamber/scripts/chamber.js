@@ -19,6 +19,25 @@ document.addEventListener("DOMContentLoaded", function () {
 
     let year = new Date().getFullYear();
     yearSpan.textContent = year;
+
+    const visitInfo = document.querySelector(".visit-info");
+    const lastVisit = localStorage.getItem("lastVisit");
+    const currentDate = Date.now();
+    const oneDay = 24 * 60 * 60 * 1000; // Number of milliseconds in a day
+
+    if (!lastVisit) {
+        visitInfo.textContent = "Welcome! Let us know if you have any questions.";
+    } else {
+        const daysSinceLastVisit = Math.round((currentDate - lastVisit) / oneDay);
+        if (daysSinceLastVisit === 0) {
+            visitInfo.textContent = "Back so soon! Awesome!";
+        } else {
+            const message = daysSinceLastVisit === 1 ? "day" : "days";
+            visitInfo.textContent = `You last visited ${daysSinceLastVisit} ${message} ago.`;
+        }
+    }
+
+    localStorage.setItem("lastVisit", currentDate);
 });
 
 const nav = document.querySelector("nav");
@@ -36,4 +55,11 @@ menuToggleContainer.addEventListener("click", () => {
         closeMenuBtn.classList.remove("active");
         nav.classList.remove("active");
     }
+});
+
+const overlays = document.querySelectorAll(".overlay");
+
+overlays.forEach((overlay) => {
+    const overlayCaption = overlay.firstElementChild.getAttribute("data-caption");
+    overlay.style.setProperty("--overlay-content", `"${overlayCaption}"`);
 });
