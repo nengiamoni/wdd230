@@ -1,0 +1,165 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+/*----------- BODY --------------*/
+body {
+    font-size: 16px;
+    font-family: Verdana, sans-serif;
+}
+
+
+/*----------- HEADER --------------*/
+header {
+    padding: .5rem 2%;
+    background-color: #ddd;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header h2 {
+    margin: 0;
+    font-weight: normal;
+}
+
+/*----------- NAVIGATION --------------*/
+nav {
+    background-color: #666;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    border-bottom: solid 1px #333;
+}
+
+nav ul li a {
+    display: block;
+    background-color: #444;
+    color: #eee;
+    padding: .5rem 0;
+    text-decoration: none;
+    font-size: .9rem;
+    text-align: center;
+}
+
+nav ul li.active a {
+    background-color: #000;
+    color: #fff;
+}
+
+/*----------- MAIN --------------*/
+main {
+    padding: 0 2%;
+    min-height: 20rem;
+}
+
+
+/*----------- FOOTER --------------*/
+footer {
+    background-color: #ddd;
+    padding: .5rem 2%;
+    text-align: center;
+}
+
+/* ///////  */
+
+/* Start a form styling section */
+/* Styling the fieldsets */
+.wf1 fieldset {
+    margin: 20px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+/* Styling the legends */
+.wf1 legend {
+    color: blue;
+    padding: 0 10px;
+}
+
+/* Styling the labels */
+.wf1 label {
+    display: block;
+    color: red;
+    padding-top: 10px;
+    font-size: 0.9em;
+}
+
+/* Styling the subheadings */
+.wf1 div {
+    padding-top: 10px;
+    color: blue;
+    /* Match the legend color */
+    font-size: 0.9em;
+    /* Match the label font size */
+}
+
+/* Styling the inputs */
+.wf1 input[type="text"],
+.wf1 input[type="tel"],
+.wf1 input[type="email"],
+.wf1 input[type="url"],
+.wf1 input[type="date"],
+.wf1 input[type="number"],
+.wf1 select {
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    color: gray;
+    width: 100%;
+    max-width: 400px;
+    background-color: #f9f9f9;
+    /* Soft gray color */
+}
+
+/* Styling the radio and checkbox inputs */
+.wf1 input[type="radio"],
+.wf1 input[type="checkbox"] {
+    margin-right: 6px;
+}
+
+/* Styling the submission button */
+.wf1 input[type="submit"] {
+    border: none;
+    background: linear-gradient(#9c2c13, #6f200e);
+    color: white;
+    border-radius: 6px;
+    padding: 0.8rem;
+    width: 96%;
+    max-width: 400px;
+    box-shadow: 1px 1px 4px #999;
+    margin-bottom: 2rem;
+    margin-left: 2%;
+    cursor: pointer;
+}
+
+/* Styling required inputs */
+.wf1 input:required {
+    border-right: 6px solid red;
+    /* Adjust border style as needed */
+}
+
+
+/* Override browser styling */
+.wf1 select {
+    appearance: none;
+}

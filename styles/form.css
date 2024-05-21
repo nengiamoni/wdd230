@@ -1,0 +1,40 @@
+:root {
+    --bg-color: rgb(0, 71, 153);
+    --text-color: white;
+    --border-color: grey;
+}
+
+main {
+    display: block;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    border: 1px solid var(--border-color);
+}
+
+label {
+    display: block;
+    padding: 0.5rem;
+}
+
+input {
+    display: block;
+}
+
+#rating {
+    width: 180px;
+    margin-bottom: 0;
+}
+
+#rangevalue {
+    font-size: 1.5rem;
+    margin-left: 100px;
+}
+
+#rangevalues {
+    display: flex;
+    width: 190px;
+}
+
+#rangevalues option {
+    flex: 1 1 auto;
+}
