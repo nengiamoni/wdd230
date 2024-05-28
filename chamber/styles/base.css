@@ -5,8 +5,8 @@
 }
 
 body {
-    min-height: 150vh;
-    min-height: 150svh;
+    min-height: 100vh;
+    min-height: 100svh;
     width: 100dvw;
     background-color: #f1eded;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -83,12 +83,17 @@ nav ul li {
     background-color: white;
 }
 
-nav ul li a {
+nav ul li a,
+.cta a {
     text-decoration: none;
     font-weight: 900;
     font-size: 1rem;
     color: #232323;
     padding-block: 1rem;
+}
+
+.cta a {
+    color: white;
 }
 
 .menu-toggle {
@@ -134,6 +139,8 @@ main {
 
 .cta {
     position: absolute;
+    display: grid;
+    place-content: center;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -177,6 +184,7 @@ main {
     background-color: rgba(0, 0, 0, 0.8);
     font-size: smaller;
 }
+
 
 .events h3 {
     margin-bottom: 0.5rem;
@@ -296,7 +304,7 @@ main {
 }
 
 footer {
-    min-height: 20vh;
+    min-height: 15vh;
     width: 100%;
     background-color: white;
     padding: 2rem 1rem;
@@ -505,4 +513,173 @@ legend {
 
 .join-sidebar-item p:first-child {
     font-size: 1.6rem;
+}
+
+/* Directory page  */
+.directory-main {
+    padding: 1rem;
+    display: grid;
+    place-content: center;
+    align-content: start;
+    height: 100vh;
+    overflow-y: auto;
+}
+
+.toggle {
+    width: max-content;
+    margin-inline: auto;
+    display: flex;
+    gap: 2rem;
+}
+
+.toggle button {
+    position: relative;
+    margin-block: 2rem;
+    width: max-content;
+    padding: 1rem 2rem;
+    cursor: pointer;
+}
+
+.toggle button.active::after {
+    position: absolute;
+    display: grid;
+    place-content: center;
+    content: "✔️";
+    height: 1.5rem;
+    width: 1.5rem;
+    background-color: #c8c8f3;
+    border-radius: 50%;
+    top: -0.75rem;
+    right: -0.75rem;
+    font-size: 0.8rem;
+
+}
+
+.image-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    width: 95vw;
+    max-width: 1200px;
+    margin-inline: auto;
+    display: grid;
+    gap: 1rem;
+}
+
+.card {
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+}
+
+.member-info {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    background-color: rgba(0, 0, 0, 0.2);
+    height: 25%;
+    width: 100%;
+    bottom: 0;
+    z-index: 10;
+    transition: transform 0.3s ease-in-out;
+}
+
+.member-info button {
+    padding: 0.5rem 1rem;
+    background-color: #232323;
+    color: white;
+    cursor: pointer;
+    font-size: 0.8rem;
+}
+
+/* Directory Info  */
+.directory-info {
+    height: calc(100vh - 30vh);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #232323;
+}
+
+.directory-info .image {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
+    height: 30vh;
+    width: 95vw;
+    max-width: 500px;
+}
+
+.directory-info .image img {
+    width: 100%;
+    height: 100%;
+}
+
+.directory-info .details {
+    width: 100%;
+    gap: 1rem;
+}
+
+.directory-info .details div {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 100%;
+    margin-block: 1rem;
+    align-items: center;
+
+}
+
+.membershipLevel p {
+    font-size: 2rem;
+}
+
+/* List View  */
+
+.company-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    width: 90vw;
+    max-width: 900px;
+}
+
+.company-item {
+    background-color: #f0f8ff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
+    margin-bottom: 1rem;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    color: #232323;
+}
+
+.company-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.company-details strong {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+}
+
+.company-details p {
+    margin: 5px 0;
+}
+
+.company-details a {
+    color: #0066cc;
+    text-decoration: none;
+    margin-top: 5px;
+}
+
+.company-details a:hover {
+    text-decoration: underline;
 }

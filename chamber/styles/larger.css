@@ -135,4 +135,55 @@
     .thankyou h1 {
         font-size: 2.4rem;
     }
+
+    /* Directory Page  */
+    .directory-main {
+        height: calc(100vh - 22vh);
+        overflow-y: auto;
+    }
+
+    .member-info {
+        transform: translateY(100%);
+    }
+
+    .card:hover .member-info {
+        transform: translateY(0%);
+    }
+
+    /* List View  */
+
+    .company-item {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .company-details {
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+    }
+
+    .company-details>* {
+        flex: 1;
+    }
+
+    .company-details strong {
+        margin-right: 20px;
+    }
+
+    .company-details p {
+        text-align: center;
+
+    }
+
+    .company-details a {
+        margin-top: 0;
+        text-align: end;
+    }
+
+    /* Directory info page  */
+    .directory-info {
+        height: calc(100vh - 25vh);
+    }
 }

@@ -1,0 +1,84 @@
+{
+    "members": [
+        {
+            "name": "Best Interior Design",
+            "address": "24 Ekerin Street, Ologuneru Area, Ibadan, Oyo State",
+            "telephone": "+2348021113434",
+            "website": "www.bestinteriordesign.co.ng",
+            "imgURL": "https://nengiamoni.github.io/wdd230/chamber/images/best_interior_design.png",
+            "membershipLevel": "Gold"
+        },
+        {
+            "name": "Business Jewels",
+            "address": "15 Oba Adebimpe Road, Ring Road, Ibadan, Oyo State",
+            "telephone": "+2348032224455",
+            "website": "www.businessjewels.ng",
+            "imgURL": "https://nengiamoni.github.io/wdd230/chamber/images/jewels.jpeg",
+            "membershipLevel": "Silver"
+        },
+        {
+            "name": "DJ Sounds",
+            "address": "36 Lekan Salami Close, Bodija, Ibadan, Oyo State",
+            "telephone": "+2348043335566",
+            "website": "www.djsounds.ng",
+            "imgURL": "https://nengiamoni.github.io/wdd230/chamber/images/dj_sounds.jpeg",
+            "membershipLevel": "Gold"
+        },
+        {
+            "name": "Jacqueline Thompson",
+            "address": "22 Osuntokun Avenue, Old Bodija, Ibadan, Oyo State",
+            "telephone": "+2348054446677",
+            "website": "www.jacquelinethompson.ng",
+            "imgURL": "https://nengiamoni.github.io/wdd230/chamber/images/jacqueline_thompson.png",
+            "membershipLevel": "Bronze"
+        },
+        {
+            "name": "Jazz Studio",
+            "address": "18 Challenge Road, Challenge, Ibadan, Oyo State",
+            "telephone": "+2348065557788",
+            "website": "www.jazzstudio.ng",
+            "imgURL": "nengiamoni.github.io/wdd230/chamber/images/jazz_studio.png",
+            "membershipLevel": "Bronze"
+        },
+        {
+            "name": "Michael O'Henry",
+            "address": "45 Dugbe Street, Dugbe, Ibadan, Oyo State",
+            "telephone": "+2348076668899",
+            "website": "www.michaelohenry.ng",
+            "imgURL": "https://nengiamoni.github.io/wdd230/chamber/images/michael_o_henry.png",
+            "membershipLevel": "Gold"
+        },
+        {
+            "name": "Nexus Cars",
+            "address": "9 Secretariat Road, Agodi, Ibadan, Oyo State",
+            "telephone": "+2348087779900",
+            "website": "www.nexuscars.ng",
+            "imgURL": "https://nengiamoni.github.io/wdd230/chamber/images/nexus_cars.png",
+            "membershipLevel": "Silver"
+        },
+        {
+            "name": "Palmer Builder",
+            "address": "11 Liberty Road, Oke Ado, Ibadan, Oyo State",
+            "telephone": "+2348098881010",
+            "website": "www.palmerbuilder.ng",
+            "imgURL": "https://nengiamoni.github.io/wdd230/chamber/images/palmer_builder.png",
+            "membershipLevel": "Gold"
+        },
+        {
+            "name": "Sweet Creams Bakeshop",
+            "address": "27 Mokola Hill, Mokola, Ibadan, Oyo State",
+            "telephone": "+2348109991122",
+            "website": "www.sweetcreamsbakeshop.ng",
+            "imgURL": "https://adehenryomooba.github.io/wdd230/chamber/images/sweet_cream_bakeshop.jpeg",
+            "membershipLevel": "Gold"
+        },
+        {
+            "name": "Yoga Center",
+            "address": "30 New Gbagi Market, Gbagi, Ibadan, Oyo State",
+            "telephone": "+2348110002233",
+            "website": "www.yogacenter.ng",
+            "imgURL": "https://nengiamoni.github.io/wdd230/chamber/images/yoga_center.png",
+            "membershipLevel": "Silver"
+        }
+    ]
+}
