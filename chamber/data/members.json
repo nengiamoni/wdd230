@@ -2,80 +2,80 @@
     "members": [
         {
             "name": "Best Interior Design",
-            "address": "24 Ekerin Street, Ologuneru Area, Ibadan, Oyo State",
-            "telephone": "+2348021113434",
+            "address": "Adams Ranch Road, Idaho City, Boise, Idaho,",
+            "telephone": "+1-21113434",
             "website": "www.bestinteriordesign.co.ng",
             "imgURL": "https://nengiamoni.github.io/wdd230/chamber/images/best_interior_design.png",
             "membershipLevel": "Gold"
         },
         {
             "name": "Business Jewels",
-            "address": "15 Oba Adebimpe Road, Ring Road, Ibadan, Oyo State",
-            "telephone": "+2348032224455",
+            "address": "Banner Road, Idaho City, Boise, Idaho",
+            "telephone": "+1-32224455",
             "website": "www.businessjewels.ng",
             "imgURL": "https://nengiamoni.github.io/wdd230/chamber/images/jewel.png",
             "membershipLevel": "Silver"
         },
         {
             "name": "DJ Sounds",
-            "address": "36 Lekan Salami Close, Bodija, Ibadan, Oyo State",
-            "telephone": "+2348043335566",
+            "address": "Mark Lane, Idaho City, Boise, Idaho,",
+            "telephone": "+1-43335566",
             "website": "www.djsounds.ng",
             "imgURL": "https://nengiamoni.github.io/wdd230/chamber/images/dj_sonds.png",
             "membershipLevel": "Gold"
         },
         {
             "name": "Jacqueline Thompson",
-            "address": "22 Osuntokun Avenue, Old Bodija, Ibadan, Oyo State",
-            "telephone": "+2348054446677",
+            "address": "Madison Street, Idaho City, Boise, Idaho,",
+            "telephone": "+1-54446677",
             "website": "www.jacquelinethompson.ng",
             "imgURL": "https://nengiamoni.github.io/wdd230/chamber/images/jacqueline_thompson.png",
             "membershipLevel": "Bronze"
         },
         {
             "name": "Jazz Studio",
-            "address": "18 Challenge Road, Challenge, Ibadan, Oyo State",
-            "telephone": "+2348065557788",
+            "address": "Montgomery Street, Idaho City, Boise, Idaho,",
+            "telephone": "+1-65557788",
             "website": "www.jazzstudio.ng",
             "imgURL": "https://nengiamoni.github.io/wdd230/chamber/images/jazz_studio.png",
             "membershipLevel": "Bronze"
         },
         {
             "name": "Michael O'Henry",
-            "address": "45 Dugbe Street, Dugbe, Ibadan, Oyo State",
-            "telephone": "+2348076668899",
+            "address": "Rattlesnake Road, Idaho City, Boise, Idaho, ",
+            "telephone": "+1-76668899",
             "website": "www.michaelohenry.ng",
             "imgURL": "https://nengiamoni.github.io/wdd230/chamber/images/michael_o_henry.png",
             "membershipLevel": "Gold"
         },
         {
             "name": "Nexus Cars",
-            "address": "9 Secretariat Road, Agodi, Ibadan, Oyo State",
-            "telephone": "+2348087779900",
+            "address": "State Highway 21, Idaho City, Boise, Idaho,",
+            "telephone": "+1-87779900",
             "website": "www.nexuscars.ng",
             "imgURL": "https://nengiamoni.github.io/wdd230/chamber/images/nexus_cars.png",
             "membershipLevel": "Silver"
         },
         {
             "name": "Palmer Builder",
-            "address": "11 Liberty Road, Oke Ado, Ibadan, Oyo State",
-            "telephone": "+2348098881010",
+            "address": "Wall Street, Idaho City, Boise, Idaho,",
+            "telephone": "+1-98881010",
             "website": "www.palmerbuilder.ng",
             "imgURL": "https://nengiamoni.github.io/wdd230/chamber/images/palmer_builder.png",
             "membershipLevel": "Gold"
         },
         {
             "name": "Sweet Creams Bakeshop",
-            "address": "27 Mokola Hill, Mokola, Ibadan, Oyo State",
-            "telephone": "+2348109991122",
+            "address": "Tamarack Road, Idaho City, Boise, Idaho",
+            "telephone": "+1-109991122",
             "website": "www.sweetcreamsbakeshop.ng",
             "imgURL": "https://nengiamoni.github.io/wdd230/chamber/images/sweet_creams_bakeshop.png",
             "membershipLevel": "Gold"
         },
         {
             "name": "Yoga Center",
-            "address": "30 New Gbagi Market, Gbagi, Ibadan, Oyo State",
-            "telephone": "+2348110002233",
+            "address": "Scott Drive, Idaho City, Boise, Idaho,",
+            "telephone": "+1-110002233",
             "website": "www.yogacenter.ng",
             "imgURL": "https://nengiamoni.github.io/wdd230/chamber/images/yoga_center.png",
             "membershipLevel": "Silver"
