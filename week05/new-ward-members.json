@@ -1,0 +1,38 @@
+{
+    "family_name": "Amoni",
+    "date_moved_in": "December 31 2020",
+    "family_size": 6,
+    "visited_by_bishopric": true,
+    "family_members": [
+        {
+            "name": "sunny Amoni",
+            "gender": "Male",
+            "dob": "January 21, "
+        },
+        {
+            "name": "Miebaka Amoni",
+            "gender": "Female",
+            "dob": "September 30,"
+        },
+        {
+            "name": "Matilda Amoni",
+            "gender": "Female",
+            "dob": "January 5 "
+        },
+        {
+            "name": "Comfort Amoni",
+            "gender": "Female",
+            "dob": "june 11, 2000"
+        },
+        {
+            "name": "Favour Amoni",
+            "gender": "Female",
+            "dob": "december 15, 2005 "
+        },
+        {
+            "name": "Belema Amoni",
+            "gender": "Female",
+            "dob": "September 29, 2008"
+        }
+    ]
+}

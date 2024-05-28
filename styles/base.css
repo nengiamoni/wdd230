@@ -188,7 +188,7 @@ h1 {
 
 #learning-activities li {
     list-style: none;
-    margin-block: 0.2rem;
+    margin-block: 0.5rem;
     font-size: smaller;
 }
 
@@ -219,6 +219,13 @@ h1 {
 .card2 p {
     margin-block: 2rem;
     text-align: center;
+}
+
+#weather-home-p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
 }
 
 iframe {
