@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
     viewStyle = window.localStorage.getItem("view_style") || "grid";
 
     if (viewStyle === "grid") {
-        document.querySelector(".grid").classList.add("active");
+        document.querySelector(".grid").classList.add("activi");
     }
     if (viewStyle === "list") {
         document.querySelector(".list").classList.add("active");
