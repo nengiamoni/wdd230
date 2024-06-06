@@ -117,6 +117,32 @@ nav ul li a,
     display: block;
 }
 
+.banner {
+    display: none;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    text-align: center;
+    padding: 15px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    height: 12vh;
+}
+
+.close-button {
+    color: white;
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    bottom: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
 main {
     display: flex;
     flex-direction: column;
@@ -144,7 +170,7 @@ main {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    padding: 1rem 2rem;
+    padding: 0.2rem 3rem;
     font-weight: 900;
     font-size: 1rem;
     cursor: pointer;
@@ -204,8 +230,18 @@ main {
 .weather-sign p,
 .weather-info p,
 .humidity p,
-.wind-chill p {
+.wind-chill p,
+.forecast p {
     color: #232323;
+}
+
+.forecast {
+    display: flex;
+
+}
+
+.forecast-days {
+    display: flex;
 }
 
 #weather {
@@ -223,6 +259,14 @@ main {
     width: 100%;
     gap: 1rem;
 
+}
+
+.forecast p {
+    margin-right: 1rem;
+}
+
+.forecast-days p {
+    margin-right: 0.5rem;
 }
 
 .sign,

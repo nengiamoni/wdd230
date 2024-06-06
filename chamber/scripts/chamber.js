@@ -8,10 +8,10 @@ document.addEventListener("DOMContentLoaded", function () {
     viewStyle = window.localStorage.getItem("view_style") || "grid";
 
     if (viewStyle === "grid") {
-        document.querySelector(".grid").classList.add("activi");
+        document.querySelector(".grid")?.classList.add("active");
     }
     if (viewStyle === "list") {
-        document.querySelector(".list").classList.add("active");
+        document.querySelector(".list")?.classList.add("active");
     }
 
     let lastModifiedParagraph = document.querySelector(".lastModified");
@@ -85,8 +85,6 @@ const listBtn = document.querySelector(".list");
 if (viewStyle === "grid") gridBtn.classList.add("active");
 if (viewStyle === "list") listBtn.classList.add("active");
 
-console.log({ viewStyle });
-
 const localURL =
     "https://nengiamoni.github.io/wdd230/chamber/data/members.json";
 
@@ -94,15 +92,13 @@ async function getMembers() {
     const response = await fetch(localURL);
     const data = await response.json();
 
-    console.log({ viewStyle });
-
     if (viewStyle === "grid") displayGrid(data.members);
     if (viewStyle === "list") displayList(data.members);
 }
 
 getMembers();
 
-gridBtn.addEventListener("click", () => {
+gridBtn?.addEventListener("click", () => {
     if (!gridBtn.classList.contains("active")) {
         gridBtn.classList.add("active");
         listBtn.classList.remove("active");
@@ -112,7 +108,7 @@ gridBtn.addEventListener("click", () => {
     }
 });
 
-listBtn.addEventListener("click", () => {
+listBtn?.addEventListener("click", () => {
     if (!listBtn.classList.contains("active")) {
         listBtn.classList.add("active");
         gridBtn.classList.remove("active");
@@ -169,8 +165,8 @@ function displayGrid(members) {
     });
 
     imgContainer.appendChild(fragment);
-    if (list) directoryMain.removeChild(list);
-    directoryMain.appendChild(imgContainer);
+    if (list) directoryMain?.removeChild(list);
+    directoryMain?.appendChild(imgContainer);
 
     document.querySelectorAll(".more-info").forEach((button) => {
         button.addEventListener("click", () => {
@@ -215,7 +211,7 @@ function displayList(member) {
 
     if (grid) directoryMain.removeChild(grid);
 
-    directoryMain.appendChild(listContainer);
+    directoryMain?.appendChild(listContainer);
 
     document
         .querySelectorAll(".company-details")
